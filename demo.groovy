@@ -9,7 +9,7 @@ def hashValues = [md5: 'b161b126527818e8c77a084d10ec50d2', md2: '23e07fb63153e1c
 // Assertations 
 assert hashes.md5 == 'b161b126527818e8c77a084d10ec50d2'
 
-// All Together
+// All Together, with String interpolation
 for (hash in hashes.keySet()) {
   println "$hash: ${hashes[hash]}"
   assert hashes[hash] == hashValues[hash]
